@@ -121,6 +121,7 @@ This environment differs from others as it provides a rich `obs_dict` containing
 - `act`: Current muscle activation levels
 
 You can select desired values from this `obs_dict` to construct your own observation space or design rewards. 
+*** You are also allowed to use other values such as qpos and qvel for observation or reward ***
 
 ### Skeleton Information (https://github.com/MyoHub/myo_sim/blob/main/leg/assets/myolegs_chain.xml)
 
