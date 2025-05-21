@@ -19,13 +19,13 @@ else:
 env = CustomEnvWrapper(motion_path=motion_path, mode=args.mode)
 
 # Load model if specified
-model = PPO.load(args.model) if args.model is not None else None
+trained_model = PPO.load(args.model) if args.model is not None else None
 obs, _ = env.reset()
 
 # Interaction loop
 while True:
-    if model is not None:
-        action, _ = model.predict(obs, deterministic=True)
+    if trained_model is not None:
+        action, _ = trained_model.predict(obs, deterministic=True)
     else:
         action = env.action_space.sample()
     obs, reward, terminated, truncated, _ = env.step(action)
