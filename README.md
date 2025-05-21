@@ -40,7 +40,8 @@ Simulate the trained model.
 
 ```bash
 # --model: path to the trained model
-python rendering.py --model {model_path} --mode walk/stand
+# Use --motion if motion data is needed
+python rendering.py --model {model_path} --mode walk/stand (--motion {motion_path})
 ```
 
 ## Logging
