@@ -3,6 +3,9 @@
 This repository contains the skeleton code for Assignment #3 of the SNU Human Motion course.  
 It is based on the [myoLegWalk-v0](https://github.com/MyoHub/myosuite) environment from MyoSuite, and demonstrates training using PPO from [Stable-Baselines3](https://stable-baselines3.readthedocs.io/en/master/).
 
+## ⚠️ IMPORTANT NOTES
+
+[22:38 05/21] Fix bug: Fixed an error that occurs when inferencing models (on MAC OS). Changed variable name from 'model' to 'trained_model' in render.py.
 
 ## Installation
 
